@@ -90,4 +90,4 @@ Pre Test Warung Pintar
     ![alt text](https://raw.githubusercontent.com/fitraaditama7/warung-pintar-test/master/kedua.gif)
 
 ## API Docs
-- [Postman Docs](https://documenter.getpostman.com/view/6178102/SW7gTk1d?version=latest)
+- [Postman API Docs](https://documenter.getpostman.com/view/6178102/SW7gTk1d?version=latest)
