@@ -80,4 +80,5 @@ Pre Test Warung Pintar
       $ make socket
     ```
   - Then results like this
-    
+  
+    ![alt text](https://raw.githubusercontent.com/fitraaditama7/warung-pintar-test/master/pertama.gif)
