@@ -4,8 +4,8 @@ Pre Test Warung Pintar
 
 [Prerequisites](#prerequisites) |
 [Installation](#installation) |
-[Configuration](#environment) |
-[License](#license)
+[How to use](#how-to-use) |
+[API Docs](#license)
 
 ## Prerequisites
 ### Download
@@ -66,6 +66,7 @@ Pre Test Warung Pintar
   ```
     $ go mod download
   ```
+## How To Use
 - Open 3 terminal to running producer, consumer and socket
   - Running producer
     ```
@@ -75,10 +76,17 @@ Pre Test Warung Pintar
     ```
       $ make consumer
     ```
-  - Running socker
+  - Running socket
     ```
       $ make socket
     ```
   - Then results like this
   
     ![alt text](https://raw.githubusercontent.com/fitraaditama7/warung-pintar-test/master/pertama.gif)
+- After 3 of them running, then open browser and open http://localhost:8080 for get all message from kafka
+- Open http://localhost:4500 to send the message
+- Final Result. Don't Forget to scroll for getting new real time message
+![alt text](https://raw.githubusercontent.com/fitraaditama7/warung-pintar-test/master/kedua.gif)
+
+## API Docs
+- [Postman Docs](https://documenter.getpostman.com/view/6178102/SW7gTk1d?version=latest)
