@@ -5,7 +5,7 @@ Pre Test Warung Pintar
 [Prerequisites](#prerequisites) |
 [Installation](#installation) |
 [How to use](#how-to-use) |
-[API Docs](#license)
+[API Docs](#api-docs)
 
 ## Prerequisites
 ### Download
@@ -86,6 +86,7 @@ Pre Test Warung Pintar
 - After 3 of them running, then open browser and open http://localhost:8080 for get all message from kafka
 - Open http://localhost:4500 to send the message
 - Final Result. Don't Forget to scroll for getting new real time message
+
 ![alt text](https://raw.githubusercontent.com/fitraaditama7/warung-pintar-test/master/kedua.gif)
 
 ## API Docs
