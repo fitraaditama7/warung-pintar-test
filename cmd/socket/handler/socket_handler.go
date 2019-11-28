@@ -1,12 +1,12 @@
 package handler
 
 import (
-	"log"
 	"net/http"
 	"warung-pintar-test/cmd/socket/libs"
 
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
+	"github.com/sirupsen/logrus"
 )
 
 var Upgrader = websocket.Upgrader{
@@ -29,7 +29,7 @@ func ServerWS(w http.ResponseWriter, r *http.Request) {
 	Upgrader.CheckOrigin = func(r *http.Request) bool { return true }
 	ws, err := Upgrader.Upgrade(w, r, nil)
 	if err != nil {
-		log.Println(err)
+		logrus.Errorf("Unable to create websocket connection got error: %v", err)
 		return
 	}
 

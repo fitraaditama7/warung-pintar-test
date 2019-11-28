@@ -5,6 +5,7 @@ import (
 	"warung-pintar-test/cmd/producer/api/libs"
 
 	"github.com/gin-gonic/gin"
+	"github.com/sirupsen/logrus"
 )
 
 /*
@@ -22,6 +23,7 @@ func SendMessage(c *gin.Context) {
 
 	err := libs.SendMessage(message)
 	if err != nil {
+		logrus.Errorf("Unable to send message to kafka producer got error: %v", err)
 		code = http.StatusInternalServerError
 		message = "Gagal mengirim pesan"
 	} else {

@@ -24,6 +24,7 @@ func GetAllMessage() error {
 
 	consumers, err := sarama.NewConsumer([]string{"kafka:9092"}, kafkaConfig)
 	if err != nil {
+		logrus.Errorf("Unable to create consumer got error: %v", err)
 		return err
 	}
 

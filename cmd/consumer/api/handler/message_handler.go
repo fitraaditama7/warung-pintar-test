@@ -6,6 +6,7 @@ import (
 	"warung-pintar-test/cmd/consumer/config"
 
 	"github.com/gin-gonic/gin"
+	"github.com/sirupsen/logrus"
 )
 
 /*
@@ -20,9 +21,15 @@ func GetAllMessage(c *gin.Context) {
 	var code int
 	var data interface{}
 
-	libs.GetAllMessage()
-	code = http.StatusOK
-	data = &config.LISTMESSAGE
+	err := libs.GetAllMessage()
+	if err != nil {
+		logrus.Errorf("Unable to get all message from kafka got error: %v", err)
+		code = http.StatusInternalServerError
+		data = nil
+	} else {
+		code = http.StatusOK
+		data = &config.LISTMESSAGE
+	}
 	result := gin.H{
 		"code": code,
 		"data": data,

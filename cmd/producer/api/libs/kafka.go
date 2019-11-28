@@ -43,6 +43,7 @@ func SendMessage(msg string) error {
 
 	err = kafka.SendMessage("test_topic", msg)
 	if err != nil {
+		logrus.Errorf("Unable to send message to kafka producer got error: %v", err)
 		return err
 	}
 	return nil
