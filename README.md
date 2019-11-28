@@ -41,7 +41,7 @@ Pre Test Warung Pintar
   Then add DNS of kafka to that file
   
   ```
-    127.0.0.1 kafka
+    127.0.0.1 localhost
     127.0.0.1 kafka
   ```
 - Running zookeeper container
