@@ -85,9 +85,10 @@ Pre Test Warung Pintar
     ![alt text](https://raw.githubusercontent.com/fitraaditama7/warung-pintar-test/master/pertama.gif)
 - After 3 of them running, then open browser and open http://localhost:8080 for get all message from kafka
 - Open http://localhost:4500 to send the message
-- Final Result. Don't Forget to scroll for getting new real time message
+- Then Final Result Like Below.
 
     ![alt text](https://raw.githubusercontent.com/fitraaditama7/warung-pintar-test/master/kedua.gif)
 
+    -  *note Don't Forget to scroll for getting new real time message
 ## API Docs
 - [Postman API Docs](https://documenter.getpostman.com/view/6178102/SW7gTk1d?version=latest)
